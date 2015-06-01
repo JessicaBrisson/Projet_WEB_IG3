@@ -1,0 +1,384 @@
+/*Mise en page de la page d'accueil*/
+/*Mise en place du logo=>une ville, une visite*/
+#PageAccueil #logo{
+	height:250px;
+	background: url(/Images/titreNoirBlancG.png) no-repeat top center;
+	margin : 20px;
+}
+#PageAccueil #logo .jumbotron{
+	color:black;
+}
+
+/*Copyrigth*/
+.navbar-fixed-bottom {
+	text-align : center;
+}
+
+/*Installation carte postale + Description du site =>police et taille*/
+#PageAccueil #elmt1{
+	height:290px;
+	background: url(/Images/Carte.jpg) no-repeat top center;
+	margin-top: 70px;
+	color: black;
+	font-family: 'Playball', cursive;
+	text-align:center;
+	padding : 88px;
+	font-size : 18px;
+}
+
+/*Placement du bouton trait pour recherche par categorie*/
+#PageAccueil #elmtMenu .glyphicon  { 
+	color: #fff;
+	position: fixed;
+	top: 50%;
+	z-index: 999; /*Placement devant*/
+	font-size : 200%;
+	margin-left: 20px;
+	left: 50px;
+}
+
+/*Placement du bouton 4 carre pour selection par image*/
+#PageAccueil #elmtAffichage .glyphicon { 
+	color: #fff;
+	position: fixed;
+	top: 50%;
+	z-index: 999; /*Placement devant*/
+	font-size : 200%;
+	margin-right: 20px;
+	right: 50px;
+}
+
+/*Mise en page de onglet Recherche*/
+/*Redefinition des couleurs du bandeau haut*/
+.navbar-inverse {
+	background-image : linear-gradient(to bottom,#5D0DC2 0,#30A0C8 100%);
+	border-color: #30A0C8;
+	position: absolute;
+}
+
+/*Classe logo car reutilise dans les differentes page */
+.logo{
+	margin : 10px 0 0 15px;
+}
+
+/*Classe logo et glyphicon determination du bouton bootstrap car reutilise dans les differentes page */
+.logo .glyphicon {
+	color: #fff;
+	position: absolute;
+	top: 40px;
+	z-index: 999; /*Placement devant*/
+	font-size : 200%;
+	margin-right: 15px;
+	right: 25px;
+}
+
+/*Definition des titre*/
+h1{
+	color: #340DC2;
+	font-family: 'Playball', cursive;
+	text-align:center;
+	margin-top: 125px;
+	font-size : 72px;
+}
+
+/*Positionnement du formulaire*/
+#PageRecherche .corp{
+	margin-left: 35%;
+	margin-top: 25px;
+	margin-right: 35%;
+	position : relative;
+	top :5px;
+}
+
+/*Positionnement du bouton de validation*/
+#PageRecherche .corp #Formulaire .btn{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Definition de la couleur du bouton de validation*/
+#PageRecherche .btn-primary  {
+	border-color: #340DC2;
+}
+
+/*Redefinition des couleurs de fond du formulaire*/
+#PageRecherche .well , #PageInsertion .well, #PageEmail #Poste #EnvoiEmail.well,
+#FormulaireConfirmationSupp.well{
+	background-image : linear-gradient(to bottom,#65BBDA 0,#65BBDA 100%);
+	border-radius: 20px;
+	border: 5px solid #50ABCB;
+}
+
+/*Mise en page PageAffichage*/
+/*Reutilisation de la classe logo et barre de navigation defini precedament*/ 
+
+/*Gestion des onglets*/
+/*Positionnement des onglets et modification de la couleur des bordures*/
+#PageAffichage .nav-tabs{
+	margin-left: 40%;
+	border-bottom: 1px solid #30A0C8;
+}
+
+/*Ecriture blanche pour les onglet non selectionne*/
+#PageAffichage  a{
+	color: #010305;
+ }
+ 
+/*Definition de la couleur pour l'onglet selectionne =>Bleu Fonce*/ 
+#PageAffichage .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+	background-color: #0A1669;
+	border: 1px solid #0A1669;
+	color: #FAFAFA;
+  }
+  
+/*Positionnement du carousel*/
+/*Placement du carousel sous le bandeau*/
+#PageAffichage .tab-content {
+	margin-top: 170px;
+}
+
+/*Refefiniotionde la grandeur*/
+#PageAffichage #Continent #myCarousel{
+	height:50%;
+}
+
+/*Modification de la legende*/
+#PageAffichage  #Continent .carousel-caption h3{
+	color: black;
+	font-size: 28px;
+	font-weight: 0;
+	text-shadow: 0 0px 0px;
+}
+
+/*Rond de défilement en noir*/  
+ #PageAffichage #Continent .carousel-indicators li {
+	border: 2px solid #000;
+ }
+ 
+/*Remplissement noir*/
+ #PageAffichage #Continent .carousel-indicators .active {
+	background-color: #000;
+ }
+  
+ #PageAffichage #Continent .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin: auto;
+  }
+  
+ /*Page traitement recherche*/
+ /*alignement du texte au centre*/
+ #PageTraitement #erreur.container {
+	text-align:center;
+	margin-top: 250px;
+}
+ 
+ /*Couleur Alerte*/
+#PageTraitement #erreur.container h2 {
+	color: #E03C38;
+}
+ 
+ /*Couleur Message*/
+#PageTraitement #erreur.container .alert-danger {
+	color:#F00;
+}
+  
+/*Possition bouton*/
+#PageTraitement #erreur .alert-danger .btn {
+	margin-top : 20px;
+}
+ 	
+#PageTraitement #retour .row{
+	margin-top:20px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+	
+#PageTraitement #retour .row .col-md-4 .thumbnail p{
+	font-size : 18px;
+	margin-left : 10px;
+}
+
+/*Lien retour => Positionnement*/
+#PageTraitement #RetourRecherche{
+	margin-top:125px;
+	margin-left:30px;
+}
+
+/*Lien retour => couleur*/
+#PageTraitement #RetourRecherche a{
+	font-size : 18px;
+	color: #340DC2;
+}
+
+/*Description Visite*/
+/*Lien retour => Positionnement*/
+#DescriptifVisite #RetourRecherche{
+	margin-top:125px;
+	margin-left:30px;
+}
+
+/*Lien retour => couleur*/
+#DescriptifVisite #RetourRecherche a{
+	font-size : 18px;
+	color: #340DC2;
+}
+
+/*Bloc Affichage*/
+#DescriptifVisite .well.well-lg{
+	margin : 25px 30px 15px 30px;
+	background-image : linear-gradient(to bottom,#65BBDA 0,#65BBDA 100%);
+	border-radius: 20px;
+	border: 5px solid #50ABCB;
+}
+
+#DescriptifVisite .well.well-lg h1{
+	margin-top: 25px;
+}
+
+#DescriptifVisite  .well.well-lg #PhotoTexte.row {
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+#DescriptifVisite  .well.well-lg #PhotoTexte.row .col-md-7{
+	margin-top : 4%;
+	margin-bottom : 4%;
+}
+#DescriptifVisite  .well.well-lg #PhotoTexte.row .col-md-7 p, #DescriptifVisite  .well.well-lg #Texte p{
+	font-size : 24px;
+}
+
+#DescriptifVisite  .well.well-lg #Texte {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left : 25px;
+}
+
+/*Copyrigth*/
+#DescriptifVisite  .navbar-fixed-bottom , #PageAffichage .navbar-fixed-bottom, #PageInsertion .navbar-fixed-bottom,
+#DecouverteCont .navbar-fixed-bottom, #PageEmail .navbar-fixed-bottom, #FormulaireConfirmationSupp.navbar-fixed-bottom,
+#PageAccueil .navbar-fixed-bottom, #TraitementSupp .navbar-fixed-bottom{
+	position: relative;
+}
+
+/*Page inserer*/
+/*Mise en forme legende*/
+#PageInsertion #Corp #Legende p{
+	text-align:center;
+	font-style: italic;
+	font-size : 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/*Positionnement Rectangle*/
+#PageInsertion #Corp #FormulaireInsertion{
+	margin-top: 2.5%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+/*Taille zone de texte*/
+#PageInsertion  #Corp #FormulaireInsertion textarea , #PageEmail #Poste #EnvoiEmail textarea,
+#FormulaireConfirmationSupp  textarea{
+  width: 100%;
+  height: 134px;
+  resize: none;
+  margin-top: 15px;
+ }
+ 
+ /*Positionnement Rectangle*/
+#PageInsertion #Corp #FormulaireInsertion input.btn{
+	margin-top: 15px;
+}
+ 
+ /*Page decouverteCont*/
+ /*Mise en forme legende*/
+ #DecouverteCont #Affichage p{
+	text-align: center;
+	font-style: italic;
+	font-size : 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+ 
+ /*Page DecouverteCont placement*/
+ #DecouverteCont fieldset {
+    margin: 15px 30px;
+}
+
+/*Enplacement du formulaire sur la page*/
+#PageEmail #Poste #EnvoiEmail {
+	margin-top: 2.5%;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+/*Mise en page Page Validation Email*/
+#PageValidationEmail .container, #ConfirmationSuppression #Traitement .container, #PageInsertionValidation .container{
+  margin-top: 160px;
+  text-align: center;
+}
+
+/*Texte rouge pour le titre*/
+#PageValidationEmail h2, #ConfirmationSuppression #Traitement h2{
+  color : #d9534f;
+}
+
+/*Positionnement du bouton dans la barre d'alerte*/
+#PageValidationEmail .container  .btn, #ConfirmationSuppression #Traitement .container  .btn , #PageInsertionValidation .container .btn{
+  margin-top: 15px;
+}
+
+/*On permet la réduction des cases quand on réduit la page*/
+input.zonetexte{
+  width: 33%;
+}
+
+input.zonespe{
+  width: 70%;
+}
+
+/*Page de signalement article*/
+/*Enplacement du formulaire sur la page*/
+#FormulaireConfirmationSupp {
+	margin-top: 200px;
+	margin-left: 28%;
+	margin-right: 28%;
+	text-align : center ;
+}
+
+/*Enplacement du formulaire sur la page*/
+#FormulaireConfirmationSupp .btn{
+	margin : 15px 5px ;
+	width : 40%;
+	min-width : 185px;
+}
+
+/*marge et taille boite de traitement*/
+#FormulaireConfirmationSupp input{
+	margin-top : 15px;
+	width : 30%;
+}
+
+/*marge sur texte email*/
+#FormulaireConfirmationSupp p.mail{
+	margin-top : 20px;
+}
+
+/*Bouton de suppression*/
+#boutonSupprimer a{
+  color: #fff;
+  position: absolute;
+  top: 200px;
+  font-size: 200%;
+  margin-right: 15px;
+  right: 50px;
+ }
+ 
+ /*Disposition des radio*/
+.radio-inline
+{
+	width: 40%;
+	margin-left: 10px;
+}
+
